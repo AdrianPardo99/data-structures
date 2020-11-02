@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "lista.h"
 
+/*
+ * @author Adrian Gonzalez Pardo
+ */
+
 int main(void){
   lista l=NULL;
   register int i;
@@ -13,9 +17,11 @@ int main(void){
   printf("Lista 1\n");
   print_lista(l);
   printf("Lista 2\n");
-  print_lista(l1);
-  printf("Tamanio lista: %d\n",length(l));
-  free_mem(l);
+  lista l2=add_orden_asc(l1,1000);
+  print_lista(l2);
+  printf("Tamanio lista: %d\n",length(l2));
   free_mem(l1);
+  free_mem(l);
+  free_mem(l2);
   return 0;
 }
