@@ -7,12 +7,16 @@ typedef struct nodo{
 }*lista;
 
 
+int is_empty(lista);
 lista add_value(lista,T);
 lista sig_lista(lista);
 T get_value(lista);
+lista add_orden_asc(lista,T);
+lista add_orden_desc(lista,T);
+lista orden_asc(lista);
+lista orden_desc(lista);
 void print_lista(lista);
 void free_mem(lista);
-int is_empty(lista);
 int length(lista);
 
 #endif
