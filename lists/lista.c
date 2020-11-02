@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "lista.h"
 
+/*
+ * @author Adrian Gonzalez Pardo
+ */
+
 /* Funcion que obtiene o conoce si la lista esta en el tope es decir en NULL
  *
  * @params l es una estructura que debe contener un valor distinto de NULL
